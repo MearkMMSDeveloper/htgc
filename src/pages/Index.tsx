@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { Clock, MapPin, Phone, BookOpen, Calendar, Heart, Flower2, Landmark, Users, Stethoscope } from "lucide-react";
 import templeHero from "@/assets/temple-hero.jpg";
 
+const settleEase = [0.22, 1, 0.36, 1] as const;
+
 const settle = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1, y: 0,
-    transition: { delay: i * 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }
+    transition: { delay: i * 0.1, duration: 0.8, ease: settleEase as unknown as [number, number, number, number] }
   }),
 };
 
