@@ -56,6 +56,8 @@ export default {
           foreground: "hsl(var(--brass-foreground))",
         },
         saffron: "hsl(var(--saffron))",
+        "temple-gold": "hsl(var(--temple-gold))",
+        "warm-amber": "hsl(var(--warm-amber))",
         sand: "hsl(var(--sand))",
         clay: "hsl(var(--clay))",
         sidebar: {

@@ -6,52 +6,55 @@
 
 @layer base {
   :root {
-    --background: 40 30% 97%;
-    --foreground: 25 15% 15%;
+    --background: 34 100% 97%;
+    --foreground: 15 30% 12%;
 
-    --card: 40 25% 98%;
-    --card-foreground: 25 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 15 30% 12%;
 
-    --popover: 40 25% 98%;
-    --popover-foreground: 25 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 15 30% 12%;
 
-    --primary: 22 65% 50%;
-    --primary-foreground: 40 30% 97%;
+    --primary: 0 100% 27%;
+    --primary-foreground: 34 100% 97%;
 
-    --secondary: 40 20% 93%;
-    --secondary-foreground: 25 15% 15%;
+    --secondary: 36 70% 54%;
+    --secondary-foreground: 15 30% 12%;
 
-    --muted: 40 15% 94%;
-    --muted-foreground: 25 10% 45%;
+    --muted: 40 40% 94%;
+    --muted-foreground: 15 15% 40%;
 
-    --accent: 45 60% 55%;
-    --accent-foreground: 25 15% 15%;
+    --accent: 36 70% 54%;
+    --accent-foreground: 15 30% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 15% 88%;
-    --input: 30 15% 88%;
-    --ring: 22 65% 50%;
+    --border: 30 25% 87%;
+    --input: 30 25% 87%;
+    --ring: 0 100% 27%;
 
     --radius: 0.25rem;
 
-    --sidebar-background: 40 20% 96%;
-    --sidebar-foreground: 25 15% 25%;
-    --sidebar-primary: 22 65% 50%;
-    --sidebar-primary-foreground: 40 30% 97%;
-    --sidebar-accent: 40 15% 93%;
-    --sidebar-accent-foreground: 25 15% 15%;
-    --sidebar-border: 30 15% 90%;
-    --sidebar-ring: 22 65% 50%;
+    --sidebar-background: 40 30% 95%;
+    --sidebar-foreground: 15 30% 20%;
+    --sidebar-primary: 0 100% 27%;
+    --sidebar-primary-foreground: 34 100% 97%;
+    --sidebar-accent: 40 30% 92%;
+    --sidebar-accent-foreground: 15 30% 12%;
+    --sidebar-border: 30 20% 88%;
+    --sidebar-ring: 0 100% 27%;
 
     /* Custom tokens */
-    --brass: 45 60% 55%;
-    --brass-foreground: 25 15% 15%;
-    --saffron: 22 65% 50%;
-    --stone: 40 30% 97%;
-    --sand: 40 15% 94%;
-    --clay: 25 15% 15%;
+    --brass: 36 70% 54%;
+    --brass-foreground: 15 30% 12%;
+    --saffron: 30 80% 45%;
+    --temple-gold: 36 70% 54%;
+    --crimson: 0 100% 27%;
+    --warm-amber: 40 100% 97%;
+    --stone: 34 100% 97%;
+    --sand: 40 40% 94%;
+    --clay: 15 30% 12%;
 
     /* Shadows */
     --shadow-stone: 0 2px 4px rgba(0,0,0,0.05), 0 12px 24px rgba(0,0,0,0.05);
