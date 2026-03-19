@@ -22,21 +22,23 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/htgc">
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/visit" element={<Visit />} />
-            <Route path="/worship" element={<Worship />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/learn" element={<Learn />} />
-            <Route path="/give" element={<Give />} />
-            <Route path="/contact" element={<Contact />} />
-          </Route>
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <PasscodeGate>
+        <BrowserRouter basename="/htgc">
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Index />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/visit" element={<Visit />} />
+              <Route path="/worship" element={<Worship />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/learn" element={<Learn />} />
+              <Route path="/give" element={<Give />} />
+              <Route path="/contact" element={<Contact />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </PasscodeGate>
     </TooltipProvider>
   </QueryClientProvider>
 );
