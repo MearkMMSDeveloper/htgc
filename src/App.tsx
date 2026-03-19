@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "./components/Layout";
+import PasscodeGate from "./components/PasscodeGate";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Visit from "./pages/Visit";
@@ -21,21 +22,23 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/htgc">
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/visit" element={<Visit />} />
-            <Route path="/worship" element={<Worship />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/learn" element={<Learn />} />
-            <Route path="/give" element={<Give />} />
-            <Route path="/contact" element={<Contact />} />
-          </Route>
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <PasscodeGate>
+        <BrowserRouter basename="/htgc">
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Index />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/visit" element={<Visit />} />
+              <Route path="/worship" element={<Worship />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/learn" element={<Learn />} />
+              <Route path="/give" element={<Give />} />
+              <Route path="/contact" element={<Contact />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </PasscodeGate>
     </TooltipProvider>
   </QueryClientProvider>
 );
